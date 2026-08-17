@@ -11,11 +11,13 @@
     ],
     "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/64.0.0/HEU_KMS_Activator_v64.0.0.rar",
     "hash": "7e4f770fcf41ef71c6c20949b818193e16c76e68c664571a6316b4b8d22832e5",
-    "pre_install": [
-        "$zip=(Get-ChildItem $dir\\\\HEU_KMS_Activator*).Name",
-        "7z x $dir\\\\$zip -p'HEU168' $('-o' + $dir) | Out-Null",
-        "Rename-Item \"$dir\\HEU_KMS_Activator_*.exe\" \"HEU_KMS_Activator.exe\" -Force"
-    ],
+    "installer":{
+        "script":[
+            "$file=(Get-ChildItem \"$dir\" 'HEU_KMS_Activator*' | Select-Object -First 1).FullName",
+            "7z x $file -p'HEU168' -o\".\" | Out-Null",
+            "Rename-Item \"$dir\\HEU_KMS_Activator_*.exe\" \"HEU_KMS_Activator.exe\" -Force"
+        ]
+    },
     "shortcuts": [
         [
             "HEU_KMS_Activator.exe",
