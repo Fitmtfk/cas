@@ -1,0 +1,16 @@
+{
+    "version": "2.12.6",
+    "homepage": "https://github.com/MaaXYZ/MaaDeps/",
+    "url": "https://github.com/MaaXYZ/MaaDeps/releases/download/v2.12.6/MaaDeps-x64-windows-devel.tar.xz",
+    "hash": "f67031e183735fad3faa6f9280f509d3ff1e25ae0e7e33a9185f275ef0f79cf7",
+    "installer": {
+        "script": [
+            "$file=(Get-ChildItem \"$dir\" 'MaaDeps*.tar.xz' | Select-Object -First 1).FullName",
+            "7z x $file -so | 7z x -si -ttar -o\".\""
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/MaaXYZ/MaaDeps/releases/download/v$version/MaaDeps-x64-windows-devel.tar.xz"
+    }
+}
