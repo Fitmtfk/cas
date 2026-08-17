@@ -6,7 +6,7 @@
     "installer": {
         "script": [
             "$file=(Get-ChildItem \"$dir\" 'MaaDeps*.tar.xz' | Select-Object -First 1).FullName",
-            "7z x $file -so | 7z x -si -ttar -o\".\""
+            "7z x $file -so | 7z x -si -ttar -o\".\" | Out-Null"
         ]
     },
     "checkver": "github",
