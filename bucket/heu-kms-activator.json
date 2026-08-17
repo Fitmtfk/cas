@@ -13,8 +13,6 @@
     "hash": "7e4f770fcf41ef71c6c20949b818193e16c76e68c664571a6316b4b8d22832e5",
     "installer":{
         "script":[
-            "$file=(Get-ChildItem \"$dir\" 'HEU_KMS_Activator*' | Select-Object -First 1).FullName",
-            "7z x $file -p'HEU168' -o\".\" | Out-Null",
             "Rename-Item \"$dir\\HEU_KMS_Activator_*.exe\" \"HEU_KMS_Activator.exe\" -Force"
         ]
     },
