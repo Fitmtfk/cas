@@ -31,7 +31,7 @@
     "post_install": [
         "if (!$bucket) { $bucket = 'cas' }",
         ". $bucketsdir\\$bucket\\script\\utils.ps1",
-        "Update-ScoopTrayIconPath -AppName 'HWiNFO64.exe' -NewVersion $version -RestartExplorer"
+        "Update-ScoopTrayIconPath -AppName 'hwinfo' -NewVersion $version -RestartExplorer"
     ],
     "pre_uninstall": "Get-ChildItem -Path $dir -Filter '*64_KEY.txt' -File | Copy-Item -Destination $persist_dir -Force",
     "uninstaller": {

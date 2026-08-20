@@ -15,7 +15,7 @@
     "post_install": [
         "if (!$bucket) { $bucket = 'cas' }",
         ". $bucketsdir\\$bucket\\script\\utils.ps1",
-        "Update-ScoopTrayIconPath -AppName 'QQ.exe' -NewVersion $version -RestartExplorer"
+        "Update-ScoopTrayIconPath -AppName 'qqnt' -NewVersion $version -RestartExplorer"
     ],
     "checkver": {
         "url": "https://im.qq.com/proxy/domain/cdn-go.cn/qq-web/im.qq.com_new/latest/rainbow/pcConfig.json",

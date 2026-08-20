@@ -36,7 +36,7 @@
     "post_install": [
         "if (!$bucket) { $bucket = 'cas' }",
         ". $bucketsdir\\$bucket\\script\\utils.ps1",
-        "Update-ScoopTrayIconPath -AppName 'Weixin.exe' -NewVersion $version -RestartExplorer"
+        "Update-ScoopTrayIconPath -AppName 'wechat' -NewVersion $version -RestartExplorer"
     ],
     "shortcuts": [
         [
