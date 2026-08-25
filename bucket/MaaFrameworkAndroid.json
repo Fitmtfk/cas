@@ -1,0 +1,11 @@
+{
+    "version": "5.12.3",
+    "license": "LGPL-3.0-only",
+    "homepage": "https://github.com/MaaXYZ/MaaFramework",
+    "url": "https://github.com/MaaXYZ/MaaFramework/releases/download/v5.12.3/MAA-android-aarch64-v5.12.3.zip",
+    "hash": "2865f69adff2c0cf21396a835cdc2bd831cfceb9bd4bc2ebb5557a79456654d9",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/MaaXYZ/MaaFramework/releases/download/v$version/MAA-android-aarch64-v$version.zip"
+    }
+}
