@@ -1,14 +1,15 @@
 {
     "version": "2.12.6",
     "homepage": "https://github.com/MaaXYZ/MaaDeps/",
+    "license":"LGPL-3.0-only",
     "url": "https://github.com/MaaXYZ/MaaDeps/releases/download/v2.12.6/MaaDeps-x64-windows-devel.tar.xz",
     "hash": "f67031e183735fad3faa6f9280f509d3ff1e25ae0e7e33a9185f275ef0f79cf7",
-    "installer": {
-        "script": [
-            "$file=(Get-ChildItem \"$dir\" 'MaaDeps*.tar.xz' | Select-Object -First 1).FullName",
-            "7z x $file -so | 7z x -si -ttar -o\".\" | Out-Null"
-        ]
-    },
+    "post_install":[
+        "Invoke-CachedDownload $app ${version}\"_android\" \"https://github.com/MaaXYZ/MaaDeps/releases/download/v$version/MaaDeps-arm64-android-devel.tar.xz\" \"$dir\\MaaDeps-arm64-android-devel.tar.xz\"",
+        "$file=(Get-ChildItem \"$dir\" 'MaaDeps*.tar.xz' | Select-Object -First 1).FullName",
+        "7z x $file -so | 7z x -si -ttar -o\"$dir\" -aos | Out-Null",
+        "Remove-Item $file"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/MaaXYZ/MaaDeps/releases/download/v$version/MaaDeps-x64-windows-devel.tar.xz"
