@@ -9,10 +9,9 @@
         "script": "Rename-Item $dir\\*.iso_ $dir\\gsetupmod-boot-$version.iso"
     },
     "post_install": [
-        "",
-        "Invoke-CachedDownload $app ${version}\"_manual-brief\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-manual-brief.docx \"$dir\\gsetupmod-manual-brief.docx\"",
-        "Invoke-CachedDownload $app ${version}\"_manual-detailed\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-manual-detailed.docx \"$dir\\gsetupmod-manual-detailed.docx\"",
-        "Invoke-CachedDownload $app ${version}\"_efi\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod.efi \"$dir\\gsetupmod.efi\""
+        "Invoke-CachedDownload $app ${version}\"_manual-brief\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-manual-brief.docx\" \"$dir\\gsetupmod-manual-brief.docx\"",
+        "Invoke-CachedDownload $app ${version}\"_manual-detailed\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-manual-detailed.docx\" \"$dir\\gsetupmod-manual-detailed.docx\"",
+        "Invoke-CachedDownload $app ${version}\"_efi\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod.efi\" \"$dir\\gsetupmod.efi\""
     ],
     "checkver": {
         "url": "https://api.github.com/repos/MikeWuPing/gsetupmod/releases",
