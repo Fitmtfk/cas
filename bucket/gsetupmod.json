@@ -5,10 +5,11 @@
     "license": "MIT",
     "url": "https://github.com/MikeWuPing/gsetupmod/releases/download/v0.1.0.124/gsetupmod-boot-0.1.0.124.iso",
     "hash": "834f4f87b717eaba51b6c636cb636b2060991f2a60bd21bcbb6fa23f088337d6",
-    "pre_install": [
-        
-    ],
+    "installer": {
+        "script": "Rename-Item $dir\\*.iso_ $dir\\gsetupmod-boot-$version.iso"
+    },
     "post_install": [
+        "",
         "Invoke-CachedDownload $app ${version}\"_manual-brief\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-manual-brief.docx \"$dir\\gsetupmod-manual-brief.docx\"",
         "Invoke-CachedDownload $app ${version}\"_manual-detailed\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-manual-detailed.docx \"$dir\\gsetupmod-manual-detailed.docx\"",
         "Invoke-CachedDownload $app ${version}\"_efi\" \"https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod.efi \"$dir\\gsetupmod.efi\""
@@ -18,7 +19,7 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>gsetupmod-boot-([\\d.]+).iso)"
     },
     "autoupdate": {
-        "url": "https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-boot-$version.iso",
+        "url": "https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-boot-$version.iso#dl.iso_",
         "hash": {
             "mode": "github"
         }
