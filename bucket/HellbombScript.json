@@ -19,9 +19,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([^/]+)/(?<file>Hellbomb_Script_v[\\d.]+-signed.exe)"
     },
     "autoupdate": {
-        "url": "https://github.com/helldivers2fixes/HellbombScript/releases/download/v$version/$matchFile#dl.exe_",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/helldivers2fixes/HellbombScript/releases/download/v$version/$matchFile#dl.exe_"
     }
 }

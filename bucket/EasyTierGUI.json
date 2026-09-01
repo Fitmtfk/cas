@@ -70,9 +70,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>easytier-gui_([\\d.]+)_x64-setup.exe)"
     },
     "autoupdate": {
-        "url": "https://github.com/EasyTier/EasyTier/releases/download/v$version/$matchFile",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/EasyTier/EasyTier/releases/download/v$version/$matchFile"
     }
 }

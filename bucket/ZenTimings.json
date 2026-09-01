@@ -21,9 +21,6 @@
     },
     "autoupdate": {
         "url": "https://github.com/irusanov/ZenTimings/releases/download/v$version/$matchFile",
-        "extract_dir": "ZenTimings_v$version",
-        "hash": {
-            "mode": "github"
-        }
+        "extract_dir": "ZenTimings_v$version"
     }
 }

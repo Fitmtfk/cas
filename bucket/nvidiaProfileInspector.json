@@ -16,9 +16,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>nvidiaProfileInspector.zip)"
     },
     "autoupdate": {
-        "url": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/v$version/$matchFile",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/v$version/$matchFile"
     }
 }

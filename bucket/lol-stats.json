@@ -19,9 +19,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>lol-stats_([\\d.]+)_x64-setup.exe)"
     },
     "autoupdate": {
-        "url": "https://github.com/cridyy/lol-stats/releases/download/v$version/lol-stats_$version_x64-setup.exe",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/cridyy/lol-stats/releases/download/v$version/lol-stats_$version_x64-setup.exe"
     }
 }

@@ -28,9 +28,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/([\\d.]+)/(?<file>typerPC.exe)"
     },
     "autoupdate": {
-        "url": "https://github.com/Jeffrey131313/paster/releases/download/$version/typerPC.exe",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/Jeffrey131313/paster/releases/download/$version/typerPC.exe"
     }
 }

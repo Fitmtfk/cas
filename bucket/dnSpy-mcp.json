@@ -15,9 +15,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/([\\d.]+)/dnSpy-MCP-win-x64.zip"
     },
     "autoupdate": {
-        "url": "https://github.com/Fitmtfk/dnSpyEx-Nightly/releases/download/$version/dnSpy-MCP-win-x64.zip",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/Fitmtfk/dnSpyEx-Nightly/releases/download/$version/dnSpy-MCP-win-x64.zip"
     }
 }

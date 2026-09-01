@@ -18,9 +18,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>gsetupmod-boot-([\\d.]+).iso)"
     },
     "autoupdate": {
-        "url": "https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-boot-$version.iso#dl.iso_",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/MikeWuPing/gsetupmod/releases/download/v$version/gsetupmod-boot-$version.iso#dl.iso_"
     }
 }

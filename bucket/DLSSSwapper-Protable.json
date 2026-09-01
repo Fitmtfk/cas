@@ -18,9 +18,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>DLSS.Swapper-[\\d.]+-portable.zip)"
     },
     "autoupdate": {
-        "url": "https://github.com/beeradmoore/dlss-swapper/releases/download/v$version/$matchFile",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/beeradmoore/dlss-swapper/releases/download/v$version/$matchFile"
     }
 }

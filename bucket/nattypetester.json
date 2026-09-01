@@ -14,9 +14,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/HMBSbige/NatTypeTester/releases/download/$version/NatTypeTester-$version-win-x64.7z",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/HMBSbige/NatTypeTester/releases/download/$version/NatTypeTester-$version-win-x64.7z"
     }
 }

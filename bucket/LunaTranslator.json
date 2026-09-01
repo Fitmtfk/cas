@@ -23,9 +23,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>LunaTranslator_x64_win10.zip)"
     },
     "autoupdate": {
-        "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v$version/$matchFile",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v$version/$matchFile"
     }
 }

@@ -16,9 +16,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/([\\d.]+)/dnSpyEx-net-x64.zip"
     },
     "autoupdate": {
-        "url": "https://github.com/Fitmtfk/dnSpyEx-Nightly/releases/download/$version/dnSpyEx-net-x64.zip",
-        "hash": {
-            "mode": "github"
-        }
+        "url": "https://github.com/Fitmtfk/dnSpyEx-Nightly/releases/download/$version/dnSpyEx-net-x64.zip"
     }
 }
