@@ -1,0 +1,43 @@
+{
+    "version": "b10269-1.5.1",
+    "description": "llama.cpp fork with TurboQuant WHT-rotated KV cache & weight compression + Gemma 4 MTP and Qwen 3.6 NextN speculative decoding (+30-50% throughput).",
+    "homepage": "https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/releases/download/b10269-1.5.1/llama-turboquant-windows-x64-cuda-13.3.zip",
+            "hash": "02d5d167f2ef01d1cf406287611a0bf357525156757b8ab588c7e5cc3bb31656"
+        }
+    },
+    "bin": [
+        "llama-batched-bench.exe",
+        "llama-bench.exe",
+        "llama-cli.exe",
+        "llama-completion.exe",
+        "llama-fit-params.exe",
+        "llama-gemma3-cli.exe",
+        "llama-gguf-split.exe",
+        "llama-imatrix.exe",
+        "llama-llava-cli.exe",
+        "llama-minicpmv-cli.exe",
+        "llama-mtmd-cli.exe",
+        "llama-perplexity.exe",
+        "llama-quantize.exe",
+        "llama-qwen2vl-cli.exe",
+        "llama-server.exe",
+        "llama-tokenize.exe",
+        "llama-tts.exe"
+    ],
+    "persist": "models",
+    "checkver": {
+        "url": "https://api.github.com/repos/AtomicBot-ai/atomic-llama-cpp-turboquant/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/(b\\d+-[\\d.]+)/(?<file>llama-turboquant-windows-x64-cuda-13.3.zip)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/releases/download/$version/llama-turboquant-windows-x64-cuda-13.3.zip"
+            }
+        }
+    }
+}
