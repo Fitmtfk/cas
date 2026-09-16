@@ -1,14 +1,14 @@
 {
-    "version": "140.576",
+    "version": "140.587",
     "description": "A free, simple and lightweight app for monitoring memory timings on Ryzen platform. ",
     "homepage": "https://github.com/irusanov/ZenTimings",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://www.gnu.org/licenses/gpl-3.0.html"
     },
-    "url": "https://github.com/irusanov/ZenTimings/releases/download/v140.576/ZenTimings_v140.576_beta.zip",
-    "hash": "b4fae8fadfa82b6b72643f9b17de51266c22bc3041f2f991d5d0390edfa12427",
-    "extract_dir": "ZenTimings_v140.576",
+    "url": "https://github.com/irusanov/ZenTimings/releases/download/v140.587/ZenTimings_v140.587_beta.zip",
+    "hash": "3fcfe32dd22475089e488eaac34f6790d726bf485919118d2c0c95b85149bd11",
+    "extract_dir": "ZenTimings_v140.587",
     "shortcuts": [
         [
             "ZenTimings.exe",
