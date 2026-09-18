@@ -24,10 +24,7 @@
       "        \"regex\": \"${8:(?sm)browser_download_url.*?releases/download/v([\\\\\\d.]+)/(?<file>([\\\\\\d.]+).zip)}\"",
       "    },",
       "    \"autoupdate\": {",
-      "        \"url\": \"${9:https://example.com/download/v$1/app.zip}\",",
-      "        \"hash\": {",
-      "            \"mode\": \"github\"",
-      "        }",
+      "        \"url\": \"${9:https://example.com/download/v$1/app.zip}\"",
       "    }",
       "}"
     ],
