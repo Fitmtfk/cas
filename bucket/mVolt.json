@@ -3,7 +3,7 @@
     "description": "mVolt+ is a Windows utility for NVIDIA GPU tuning and monitoring. It supports core and fabric voltage limits, clock offsets, power limits, V/F and fan curves, and saved profiles.RTX 50 series is the primary target. Support for earlier GeForce generations is experimental; available controls depend on the GPU, VBIOS and driver.",
     "homepage": "https://github.com/b00nz/mVolt",
     "license": "MIT",
-    "url": "https://github.com/b00nz/mVolt/releases/download/v0.44/mVolt%2B.exe",
+    "url": "https://github.com/b00nz/mVolt/releases/download/v0.44/mVolt+.exe",
     "hash": "1013d29bb381b64d7edab1d79c277871fb88fcc09c6cf9638ea1cc246473eaab",
     "shortcuts": [
         [
@@ -16,6 +16,6 @@
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/mVolt%2B.exe"
     },
     "autoupdate": {
-        "url": "https://github.com/b00nz/mVolt/releases/download/v$version/mVolt%2B.exe"
+        "url": "https://github.com/b00nz/mVolt/releases/download/v$version/mVolt+.exe"
     }
 }
