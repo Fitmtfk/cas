@@ -1,0 +1,17 @@
+{
+    "version": "0.8.0",
+    "description": "High-performance single-GPU inference for selected model checkpoints and GPUs.",
+    "homepage": "https://github.com/natpate/ninfer-windows",
+    "license": "Apache-2.0",
+    "url": "https://github.com/natpate/ninfer-windows/releases/download/v0.8.0/ninfer-windows-0.8.0-win64-cuda131.zip",
+    "extract_dir": "ninfer-windows-0.8.0-win64-cuda131",
+    "hash": "c3aae8886512ebae990ae286a57de8ab77f1318d14759dec7d6f2967634a1164",
+    "checkver": {
+        "url": "https://api.github.com/repos/natpate/ninfer-windows/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>ninfer-windows-([\\d.]+)-win64-cuda131.zip)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/natpate/ninfer-windows/releases/download/v$version/ninfer-windows-$version-win64-cuda131.zip",
+        "extract_dir": "ninfer-windows-$version-win64-cuda131"
+    }
+}
