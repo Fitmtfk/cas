@@ -4,7 +4,7 @@
     "homepage": "https://github.com/TeamGDB/Yakumo",
     "license": "MIT",
     "url": "https://github.com/TeamGDB/Yakumo/releases/download/v0.6.0-alpha.4/yakumo-0.6.0-alpha.4-windows-x86_64.zip",
-    "extract_dir": "yakumo-0.6.0-alpha.4-windows-x86_64.zip",
+    "extract_dir": "yakumo-0.6.0-alpha.4-windows-x86_64",
     "hash": "7540fe435a03d05232c9e9432fbdd2bafbd9e3eec4b22a7f04e21fa6767c46d2",
     "shortcuts": [
         [
@@ -18,6 +18,6 @@
     },
     "autoupdate": {
         "url": "https://github.com/TeamGDB/Yakumo/releases/download/v$version/$matchFile",
-        "extract_dir": "$matchFile"
+        "extract_dir": "yakumo-$version-windows-x86_64"
     }
 }
