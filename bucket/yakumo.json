@@ -1,0 +1,23 @@
+{
+    "version": "0.6.0-alpha.4",
+    "description": "Static recompilation of a PSP game into a native executable. Vulkan and SDL3. Bring your own copy of the game.",
+    "homepage": "https://github.com/TeamGDB/Yakumo",
+    "license": "MIT",
+    "url": "https://github.com/TeamGDB/Yakumo/releases/download/v0.6.0-alpha.4/yakumo-0.6.0-alpha.4-windows-x86_64.zip",
+    "extract_dir": "yakumo-0.6.0-alpha.4-windows-x86_64.zip",
+    "hash": "7540fe435a03d05232c9e9432fbdd2bafbd9e3eec4b22a7f04e21fa6767c46d2",
+    "shortcuts": [
+        [
+            "Yakumo.exe",
+            "Yakumo"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/TeamGDB/Yakumo/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/v([^/]+)/(?<file>yakumo([^\",\\s]+)-windows-x86_64.zip)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/TeamGDB/Yakumo/releases/download/v$version/$matchFile",
+        "extract_dir": "$matchFile"
+    }
+}
