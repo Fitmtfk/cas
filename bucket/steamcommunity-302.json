@@ -1,11 +1,11 @@
 {
-    "version": "14.0.02",
+    "version": "15.0.6",
     "description": "Reverse proxy tool to access Steam Community in mainland China.",
     "homepage": "https://www.dogfight360.com/blog/18682/",
     "license": "Freeware",
     "depends": "main/7zip",
-    "url": "https://www.dogfight360.com/blog/wp-content/uploads/2026/02/steamcommunity_302_AMD64_V14.0.02.zip",
-    "hash": "d911105fbf56a6cfcf0322e3feeb97a65a005bb9bfb2021aade45e8a11f9a8e8",
+    "url": "https://www.dogfight360.com/Usbeam/V15/Steamcommunity_302_15.0.6_Windows_x64.zip",
+    "hash": "f4bec1903d7fb2058128edc53a772680e8555be264582d5403b0cdeb9d871063",
     "extract_dir": "Steamcommunity_302",
     "shortcuts": [
         [
@@ -26,9 +26,10 @@
         "S302_rules.ini"
     ],
     "checkver": {
-        "regex": "uploads/(?<date>[\\d/]+)/steamcommunity_302_AMD64_V([\\d.]+).zip"
+        "url": "https://www.dogfight360.com/blog/18682/",
+        "regex": "(?s)S302_DOWNLOAD_CONFIG\\s*=\\s*\\{.*?version:\\s*\"V?(?<version>[\\d\\.]+)\"[^\\}]*?windows_amd64:\\s*\"(?<url>https?://[^\"]+)\""
     },
     "autoupdate": {
-        "url": "https://www.dogfight360.com/blog/wp-content/uploads/$matchDate/steamcommunity_302_AMD64_V$version.zip"
+        "url": "$matchUrl"
     }
 }
