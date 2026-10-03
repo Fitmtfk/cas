@@ -1,9 +1,9 @@
 {
-    "version": "2026.07.12",
+    "version": "2026.10.03",
     "description": "MCP server for .NET reverse engineering workflows (dnSpy/ILSpy ecosystem), built in C#. ",
     "homepage": "https://github.com/soufianetahiri/dnspy-mcp",
-    "url": "https://github.com/Fitmtfk/dnSpyEx-Nightly/releases/download/2026.07.12/dnSpy-MCP-win-x64.zip",
-    "hash": "74e56c39f8adcfc4e596369b3de2116b814e42520b822d7ddd8c42c525091b8d",
+    "url": "https://github.com/Fitmtfk/dnSpyEx-Nightly/releases/download/2026.10.03/dnSpy-MCP-win-x64.zip",
+    "hash": "1b4f2262a57c99043a0adf8b0c19dd1d45f3cd9779a0ebf0a6c5ae03087eca17",
     "shortcuts": [
         [
             "DnSpyMcpServer.exe",
