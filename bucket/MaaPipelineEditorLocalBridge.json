@@ -1,10 +1,10 @@
 {
-    "version": "2.0.7",
+    "version": "2.1.0",
     "license": "MIT",
     "homepage": "https://github.com/kqcoxn/MaaPipelineEditor",
     "depends": "MaaFramework",
-    "url": "https://github.com/kqcoxn/MaaPipelineEditor/releases/download/v2.0.7/mpelb-windows-amd64.exe",
-    "hash": "bc951b30648bd28cf6d845a2cae72a66e8734919d4505d63224b6cdc3f2352e0",
+    "url": "https://github.com/kqcoxn/MaaPipelineEditor/releases/download/v2.1.0/mpelb-windows-amd64.exe",
+    "hash": "dda1a0c25f336ff4c099fcc11d94eefb7c60d7befe8f9c158dcea683e6a8085b",
     "pre_install": "Rename-Item \"$dir\\mpelb-windows-amd64.exe\" \"mpelb.exe\" -Force",
     "post_install": [
         "Write-Host `n\"Init runtime.\"",
