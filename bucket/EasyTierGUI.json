@@ -1,12 +1,12 @@
 {
-    "version": "2.6.4",
+    "version": "2.7.0",
     "description": "一个由 Rust 和 Tokio 驱动的简单、安全、去中心化的异地组网方案 | A simple, secure, decentralized virtual private network solution powered by Rust and Tokio",
     "homepage": "https://easytier.cn/",
     "license": {
         "identifier": "LGPL-3.0-only"
     },
-    "url": "https://github.com/EasyTier/EasyTier/releases/download/v2.6.4/easytier-gui_2.6.4_x64-setup.exe",
-    "hash": "0f92d378658fe5b5b150f6dbd06c0069b7e9c10e2dc127bcac6149f5185b5678",
+    "url": "https://github.com/Fitmtfk/EasyTier/releases/download/v2.7.0/easytier-gui_2.7.0_x64-setup.exe",
+    "hash": "65d491fa6a047863cb7124c2db330e3f552977f38cae66342018729d2630de6f",
     "shortcuts": [
         [
             "app\\easytier-gui.exe",
@@ -66,11 +66,11 @@
         "}"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/EasyTier/EasyTier/releases",
+        "url": "https://api.github.com/repos/Fitmtfk/EasyTier/releases",
         "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>easytier-gui_([\\d.]+)_x64-setup.exe)"
     },
     "autoupdate": {
-        "url": "https://github.com/EasyTier/EasyTier/releases/download/v$version/$matchFile",
+        "url": "https://github.com/Fitmtfk/EasyTier/releases/download/v$version/$matchFile",
         "hash": {
             "mode": "github"
         }
