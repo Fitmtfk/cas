@@ -22,6 +22,5 @@
                 "url": "https://github.com/MaaXYZ/MaaFramework/releases/download/v$version/MAA-win-aarch64-v$version.zip"
             }
         }
-    },
-    "bin": "bin/MaaPiCli.exe"
+    }
 }
