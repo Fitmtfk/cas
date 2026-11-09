@@ -1,0 +1,47 @@
+{
+    "version": "2026-11-09.2",
+    "description": "One line of NInfer for the Blackwell, Ada Lovelace, Ampere, Turing and Volta NVIDIA GPUs, consolidated from the forks that carry it: GGUF block formats, ternary Bonsai 2, device route profiles, MTP and DFlash2.",
+    "homepage": "https://github.com/iamwavecut/ninfer-all",
+    "license": "Apache-2.0",
+    "url": "https://github.com/iamwavecut/ninfer-all/releases/download/2026-11-09.2/ninfer-windows-x64-cuda13.4-sm75-80-86-89-120a-f482d818968d.7z.001#001",
+    "hash": "6ac548820efc71bb60db8f6cedc305431f3c3d7df07aa7efcdda46c891e3c2ca",
+    "installer": {
+        "script": [
+            "$tempdir = Join-Path $dir \"temp\"",
+            "New-Item -ItemType Directory -Path $tempdir -Force | Out-Null",
+            "Move-Item -Path \"$dir\\*.7z.001#001\" -Destination \"$tempdir\\source.7z.001\" -Force",
+            "Write-Host `n\"Start downloading the remaining part of the compressed archive.\"",
+            "$dlFile = 'source.7z.002'",
+            "Invoke-CachedDownload $app ${version}\"_7z_002\" \"https://github.com/iamwavecut/ninfer-all/releases/download/2026-11-09.2/ninfer-windows-x64-cuda13.4-sm75-80-86-89-120a-f482d818968d.7z.002\" \"$tempdir\\$dlFile\"",
+            "7z x \"$tempdir\\source.7z.001\" -o\"$tempdir\" -y",
+            "$folder = Get-ChildItem -Path $tempdir -Directory | Select-Object -First 1",
+            "write-host $folder",
+            "Copy-Item -Path \"$folder\\*\" -Destination \"$dir\" -Recurse -Force",
+            "Remove-Item -Path $tempdir -Recurse -Force",
+            "Write-Host \"Installed.\""
+        ]
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/iamwavecut/ninfer-all/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/(\\d{4}-\\d{2}-\\d{2}\\.\\d+)/(?<file>ninfer-windows-x64-cuda13.4-sm75-80-86-89-120a-(?<hash>[0-9a-f]{12}).7z.001)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/iamwavecut/ninfer-all/releases/download/$version/$matchFile#001",
+        "installer": {
+            "script": [
+                "$tempdir = Join-Path $dir \"temp\"",
+                "New-Item -ItemType Directory -Path $tempdir -Force | Out-Null",
+                "Move-Item -Path \"$dir\\*.7z.001#001\" -Destination \"$tempdir\\source.7z.001\" -Force",
+                "Write-Host `n\"Start downloading the remaining part of the compressed archive.\"",
+                "$dlFile = 'source.7z.002'",
+                "Invoke-CachedDownload $app ${version}\"_7z_002\" \"https://github.com/iamwavecut/ninfer-all/releases/download/$version/ninfer-windows-x64-cuda13.4-sm75-80-86-89-120a-$matchHash.7z.002\" \"$tempdir\\$dlFile\"",
+                "7z x \"$tempdir\\source.7z.001\" -o\"$tempdir\" -y",
+                "$folder = Get-ChildItem -Path $tempdir -Directory | Select-Object -First 1",
+                "write-host $folder",
+                "Copy-Item -Path \"$folder\\*\" -Destination \"$dir\" -Recurse -Force",
+                "Remove-Item -Path $tempdir -Recurse -Force",
+                "Write-Host \"Installed.\""
+            ]
+        }
+    }
+}
