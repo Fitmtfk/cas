@@ -1,10 +1,10 @@
 {
-    "version": "0.1.0.153",
+    "version": "0.1.0.191",
     "description": "一个GUI setup选项修改器。GUI setup options modifier",
     "homepage": "https://github.com/MikeWuPing/gsetupmod",
     "license": "MIT",
-    "url": "https://github.com/MikeWuPing/gsetupmod/releases/download/v0.1.0.153/gsetupmod-boot-0.1.0.153.iso#dl.iso_",
-    "hash": "da719fc7e883b3aa31f486c0dc6f5d6bf274a432c2eaa7c9bce4155b8f2bc6a5",
+    "url": "https://github.com/MikeWuPing/gsetupmod/releases/download/v0.1.0.191/gsetupmod-boot-0.1.0.191.iso#dl.iso_",
+    "hash": "823a00d1f1c55b72d1bf997db3349a46a8b60561aa748fcbce53598e4b1e0d6e",
     "installer": {
         "script": "Rename-Item $dir\\*.iso_ $dir\\gsetupmod-boot-$version.iso"
     },
