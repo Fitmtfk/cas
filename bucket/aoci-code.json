@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0-rc2",
+    "description": "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code knowledge that gives Claude Code, Codex, Cursor, and opencode long-term context, memory, and code intelligence.",
+    "homepage": "https://github.com/aoci-spec/aoci-code",
+    "license": "MIT",
+    "url": " https://github.com/aoci-spec/aoci-code/releases/download/v0.2.0-rc2/aoci_0.2.0-rc2_windows_amd64.zip",
+    "extract_dir": "assets",
+    "hash": 1,
+    "bin": "aoci.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/aoci-spec/aoci-code/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+(?:-rc\\d+)?)/(?<file>aoci_([\\d.]+)(?:-rc\\d+)?_windows_amd64.zip)"
+    },
+    "autoupdate": {
+        "url": " https://github.com/aoci-spec/aoci-code/releases/download/v$version/aoci_$version_windows_amd64.zip",
+        "hash": {
+            "mode": "github"
+        }
+    }
+}

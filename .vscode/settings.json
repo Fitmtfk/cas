@@ -2,7 +2,7 @@
     "json.schemas": [
         {
             "fileMatch": [
-                "/*.json" 
+                "bucket/*.json" 
             ],
             "url": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json"
         }
