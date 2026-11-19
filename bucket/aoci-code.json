@@ -4,7 +4,6 @@
     "homepage": "https://github.com/aoci-spec/aoci-code",
     "license": "MIT",
     "url": " https://github.com/aoci-spec/aoci-code/releases/download/v0.2.0-rc2/aoci_0.2.0-rc2_windows_amd64.zip",
-    "extract_dir": "assets",
     "hash": "a07fe6bc6476887ce411ebc58ed8633020e0ad964bf6303ddf608bee9787b2bc",
     "bin": "aoci.exe",
     "checkver": {
