@@ -1,12 +1,11 @@
 {
-    "version": "10.16.0.3",
+    "version": "12.1.3.12",
     "description": "Galgame翻译器，支持HOOK、OCR、剪贴板等。Visual Novel Translator , support HOOK / OCR / clipboard",
     "homepage": "https://lunatranslator.org/",
     "license": "GPL-3.0",
-    "changelog": "https://github.com/HIllya51/LunaTranslator/releases",
-    "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v10.16.0.3/LunaTranslator_x64_win10.zip",
-    "hash": "203eb269b884f9a1c88182a7374f8e08ac2f06c1df8c9279484cc03b921bab43",
-    "extract_dir": "LunaTranslator_x64_win10",
+    "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v12.1.3.12/LunaTranslator_x64.zip",
+    "hash": "ca65c97676b77ae3e71f001a2a5fbbd0ee03c853ccc35d6c0db299b0f6d6e2a7",
+    "extract_dir": "LunaTranslator_x64",
     "shortcuts": [
         [
             "LunaTranslator_admin.exe",
@@ -20,7 +19,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/HIllya51/LunaTranslator/releases",
-        "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>LunaTranslator_x64_win10.zip)"
+        "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>LunaTranslator_x64.zip)"
     },
     "autoupdate": {
         "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v$version/$matchFile",
