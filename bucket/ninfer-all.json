@@ -1,10 +1,10 @@
 {
-    "version": "2026-11-22.5",
+    "version": "2026-11-25.3",
     "description": "One line of NInfer for the Blackwell, Ada Lovelace, Ampere, Turing and Volta NVIDIA GPUs, consolidated from the forks that carry it: GGUF block formats, ternary Bonsai 2, device route profiles, MTP and DFlash2.",
     "homepage": "https://github.com/iamwavecut/ninfer-all",
     "license": "Apache-2.0",
-    "url": "https://github.com/iamwavecut/ninfer-all/releases/download/2026-11-22.5/ninfer-windows-x64-cuda13.4-sm75-80-86-89-120a-719119a271ed.7z.001#001",
-    "hash": "13bb2e8fcbecec26908209d209115892ab2549de45171201d6a59a483095e7a3",
+    "url": "https://github.com/iamwavecut/ninfer-all/releases/download/2026-11-25.3/ninfer-windows-x64-cuda13.4-sm75-80-86-89-120a-5fe3107796c0.7z.001#001",
+    "hash": "ddd112d3a8bb46f8b042b1d940a8b93a1be4eb108f86fc7595a90eb398f730c4",
     "installer": {
         "script": [
             "$tempdir = Join-Path $dir \"temp\"",
@@ -12,7 +12,7 @@
             "Move-Item -Path \"$dir\\*.7z.001#001\" -Destination \"$tempdir\\source.7z.001\" -Force",
             "Write-Host `n\"Start downloading the remaining part of the compressed archive.\"",
             "$dlFile = 'source.7z.002'",
-            "Invoke-CachedDownload $app ${version}\"_7z_002\" \"https://github.com/iamwavecut/ninfer-all/releases/download/2026-11-22.5/ninfer-windows-x64-cuda13.4-sm75-80-86-89-120a-719119a271ed.7z.002\" \"$tempdir\\$dlFile\"",
+            "Invoke-CachedDownload $app ${version}\"_7z_002\" \"https://github.com/iamwavecut/ninfer-all/releases/download/2026-11-25.3/ninfer-windows-x64-cuda13.4-sm75-80-86-89-120a-5fe3107796c0.7z.002\" \"$tempdir\\$dlFile\"",
             "7z x \"$tempdir\\source.7z.001\" -o\"$tempdir\" -y",
             "$folder = Get-ChildItem -Path $tempdir -Directory | Select-Object -First 1",
             "write-host $folder",
