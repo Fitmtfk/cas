@@ -1,0 +1,18 @@
+{
+    "version": "0.5.7",
+    "description": "Local inference engine optimized for NVIDIA Blackwell",
+    "homepage": "https://github.com/jesdga95/basalt",
+    "license": "MIT",
+    "url": "https://github.com/jesdga95/basalt/releases/download/v0.5.7/basalt-v0.5.7-windows-x64.zip",
+    "hash": "dfb71d0a91b114a2969d44524dcd85fcb0547e2ffadb2f5b3499885218122881",
+    "checkver": {
+        "url": "https://api.github.com/repos/jesdga95/basalt/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/(?<file>basalt-v([\\d.]+)-windows-x64.zip)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/jesdga95/basalt/releases/download/v$version/basalt-v$version-windows-x64.zip",
+        "hash": {
+            "mode": "github"
+        }
+    }
+}
